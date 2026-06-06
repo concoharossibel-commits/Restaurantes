@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.contenedor2 {
+    align-items: center;
+}
+
+.contenedor2 a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    gap: 10px;
+    list-style: none;
+    padding: 20px;
+    text-align: 55px;
+    text-align: center;
+}
+
+/* imagenes de postres */
+
+.contenedor-postres {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    margin: 50px 50px 50px 50px;
+}
+
+.contenedor-postres .postres {
+    width: 325px;
+    height: 525px;
+    margin-top: 60px;
+    border-radius: 15px;
+}
+
+.imagen {
+    overflow: hidden;
+}
+
+.imagen img {
+    width: 200px;
+    height: 190px;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 50px 50px 50px 50px;
+    object-fit: cover;
+    transition: transform 1s ease;
+}
+
+.imagen:hover img {
+    transform: scale(1.5);
+    transition: transform 1s ease;
+    overflow: hidden;
+}
+
+.informacion {
+    text-align: left;
+}
+
+.informacion h7 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.informacion p {
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.informacion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.informacion li {
+    font-size: 25px;
+    color: white;
+}
+
+.boton a {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #37303e;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 5opx 50px 50px 50px;
+}
+
+.boton:hover {
+    transform: scale(1.05);
+}
+
+@media(min-width:768px) {
+    .contenedor-postres {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav1 {
+        display: flex;
+        padding: 50px;
+    }
+
+    .nav2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media(min-width:1024px) {
+    .contenedor-postres {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+        .nav1 {
+        display: flex;
+        padding: 50px;
+    }
+
+    .nav2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+}
